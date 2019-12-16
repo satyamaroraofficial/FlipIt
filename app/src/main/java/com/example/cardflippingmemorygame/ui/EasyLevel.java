@@ -63,27 +63,35 @@ public class EasyLevel extends Fragment{
         EasyLevelRecyclerView = rootView.findViewById(R.id.easylevelview);
         bundle = new Bundle();
         bundle.putInt("level", Constants.LEVEL_EASY);
-        preferences = getActivity().getSharedPreferences(Constants.PREF_NAME, 0);
-        bestScore = preferences.getInt(Constants.EASY_HIGH_KEY, (int) (Constants.EASY_TIME / Constants.TIME_INTERVAL));
+//        preferences = getActivity().getSharedPreferences(Constants.PREF_NAME, 0);
+//        bestScore = preferences.getInt(Constants.EASY_HIGH_KEY, (int) (Constants.EASY_TIME / Constants.TIME_INTERVAL));
 
         ((TextView) rootView.findViewById(R.id.bestEasy)).append(bestScore + "");
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 3, LinearLayoutManager.VERTICAL, false);
-        EasyLevelRecyclerView.setLayoutManager(layoutManager);
-        EasyLevelRecyclerView.setAdapter(new EasyLevelAdapter(cards));
-
-        cards = new ArrayList<>();
-        //TODO shuffle cards
-        shuffle(CARDS,Constants.EASY_NO_OF_CARDS);
-        shuffle(CARDS,Constants.EASY_NO_OF_CARDS);//Double shuffle
-        for(int card : CARDS) {
-            cards.add(card);
-        }
+//        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 3, LinearLayoutManager.VERTICAL, false);
+//        EasyLevelRecyclerView.setLayoutManager(layoutManager);
+//        EasyLevelRecyclerView.setAdapter(new EasyLevelAdapter(cards));
+//
+//        cards = new ArrayList<>();
+//        //TODO shuffle cards
+//        shuffle(CARDS,Constants.EASY_NO_OF_CARDS);
+//        shuffle(CARDS,Constants.EASY_NO_OF_CARDS);//Double shuffle
+//        for(int card : CARDS) {
+//            cards.add(card);
+//        }
 
 //        isPaused = false;
 //        isCancelled = false;
 
         return rootView;
+    }
+
+    private void fagmentTransaction(Bundle bundle) {
+        final FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        final Result r = new Result();
+        r.setArguments(bundle);
+        transaction.replace(R.id.layoutFragment, r);
+        transaction.commit();
     }
 
     public void shuffle(int cards[], int n) {

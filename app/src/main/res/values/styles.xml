@@ -10,6 +10,7 @@
         <!-- fullscreen style -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog</item>
     </style>
 
     <style name="myDialog" parent="Theme.AppCompat.Dialog">
