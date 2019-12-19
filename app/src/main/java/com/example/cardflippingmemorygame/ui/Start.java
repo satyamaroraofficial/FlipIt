@@ -29,7 +29,7 @@ public class Start extends Fragment {
         flipView.setOnFlipListener(new EasyFlipView.OnFlipAnimationListener() {
             @Override
             public void onViewFlipCompleted(EasyFlipView easyFlipView, EasyFlipView.FlipState newCurrentSide) {
-                easyFlipView.setEnabled(false);
+                easyFlipView.setFlipEnabled(false);
 
                 easy.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -41,7 +41,7 @@ public class Start extends Fragment {
                 hard.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        fragmentTransaction(new HardLevel());
+                        fragmentTransaction(new HardLevel());
                     }
                 });
             }
