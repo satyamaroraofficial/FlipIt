@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cardflippingmemorygame.R;
-import com.example.cardflippingmemorygame.ui.HardLevel;
 
 import java.util.ArrayList;
 
@@ -32,7 +31,7 @@ public class HardLevelAdapter extends RecyclerView.Adapter<HardLevelAdapter.View
 
     @Override
     public int getItemCount() {
-        return 0;
+        return cardFront.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

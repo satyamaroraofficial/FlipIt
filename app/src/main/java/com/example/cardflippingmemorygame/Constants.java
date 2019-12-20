@@ -9,6 +9,6 @@ public final class Constants {
     public static final int EASY_NO_OF_CARDS = 12;
     public static final int HARD_NO_OF_CARDS = 16;
     public static final int TIMER_INTERVAL = 1000;
-    public static final long EASY_TIME = 220000;
-    public static final long HARD_TIME = 32000;
+    public static final long EASY_TIME = 320000;
+    public static final long HARD_TIME = 420000;
 }

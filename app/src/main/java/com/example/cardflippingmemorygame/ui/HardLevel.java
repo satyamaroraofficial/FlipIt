@@ -163,7 +163,7 @@ public class HardLevel extends Fragment {
                                                 ((TextView) view.findViewById(R.id.hardlevelcounter)).setText("Time : " + l / Constants.TIMER_INTERVAL);
                                                 RemainingTime = l;
                                                 if (count == Constants.HARD_NO_OF_CARDS) {
-                                                    bundle.putString("Data", "Win");
+                                                    bundle.putString("Data", "win");
                                                     time = (int) ((Constants.HARD_TIME - l) / Constants.TIMER_INTERVAL);
                                                     bundle.putInt("Time", time);
                                                     cancel();
@@ -175,7 +175,7 @@ public class HardLevel extends Fragment {
                                         @Override
                                         public void onFinish() {
                                             if (count < Constants.HARD_NO_OF_CARDS) {
-                                                bundle.putString("Data", "Lost");
+                                                bundle.putString("Data", "lost");
                                                 bundle.putInt("Time", (int) (Constants.HARD_TIME / Constants.TIMER_INTERVAL));
                                             }
                                             fragmentTransaction(bundle);

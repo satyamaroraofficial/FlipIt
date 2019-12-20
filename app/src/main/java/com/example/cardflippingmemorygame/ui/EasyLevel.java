@@ -94,7 +94,7 @@ public class EasyLevel extends Fragment {
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 3, LinearLayoutManager.VERTICAL, false);
         EasyLevelRecyclerView.setLayoutManager(layoutManager);
-//
+
         cards = new ArrayList<>();
 //        //TODO shuffle cards
         shuffle(CARDS, Constants.EASY_NO_OF_CARDS);
@@ -117,7 +117,7 @@ public class EasyLevel extends Fragment {
                     ((TextView) view.findViewById(R.id.easylevelcounter)).setText("Time : " + l/Constants.TIMER_INTERVAL);
                     RemainingTime = l;
                     if(count == Constants.EASY_NO_OF_CARDS) {
-                        bundle.putString("Data", "Win");
+                        bundle.putString("Data", "win");
                         long time = (Constants.EASY_TIME - l)/Constants.TIMER_INTERVAL;
                         bundle.putInt("Time", (int) time);
                         cancel();
@@ -129,7 +129,7 @@ public class EasyLevel extends Fragment {
             @Override
             public void onFinish() {
                 if(count < Constants.EASY_NO_OF_CARDS) {
-                    bundle.putString("Data", "Lost");
+                    bundle.putString("Data", "lost");
                     bundle.putInt("Time", (int) (Constants.EASY_TIME/ Constants.TIMER_INTERVAL));
                 }
                 fragmentTransaction(bundle);
@@ -162,7 +162,7 @@ public class EasyLevel extends Fragment {
                                                 ((TextView) view.findViewById(R.id.easylevelcounter)).setText("Time : " + l / Constants.TIMER_INTERVAL);
                                                 RemainingTime = l;
                                                 if (count == Constants.EASY_NO_OF_CARDS) {
-                                                    bundle.putString("Data", "Win");
+                                                    bundle.putString("Data", "win");
                                                     time = (int) ((Constants.EASY_TIME - l) / Constants.TIMER_INTERVAL);
                                                     bundle.putInt("Time", time);
                                                     cancel();
@@ -174,7 +174,7 @@ public class EasyLevel extends Fragment {
                                         @Override
                                         public void onFinish() {
                                             if (count < Constants.EASY_NO_OF_CARDS) {
-                                                bundle.putString("Data", "Lost");
+                                                bundle.putString("Data", "lost");
                                                 bundle.putInt("Time", (int) (Constants.EASY_TIME / Constants.TIMER_INTERVAL));
                                             }
                                             fragmentTransaction(bundle);
