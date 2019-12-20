@@ -88,7 +88,6 @@ public class HardLevel extends Fragment {
 
         ((TextView) view.findViewById(R.id.bestHard)).append(bestScore+"");
 
-
         RecyclerView.LayoutManager lm= new GridLayoutManager(getContext(),4, LinearLayoutManager.VERTICAL,false);
         HardLevelRecyclerView.setLayoutManager(lm);
 
