@@ -55,7 +55,8 @@ public class Start extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(), "Clicked", Toast.LENGTH_SHORT).show();
+                fragmentTransaction(new Leaderboard());
             }
         });
         return rootView;

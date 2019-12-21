@@ -16,7 +16,7 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-thin"
             android:textStyle="bold"
             android:text="The flip game"
@@ -114,8 +114,19 @@
             android:layout_below="@id/instructions2"
             android:layout_centerInParent="true"
             android:background="@drawable/btn_background"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="35dp"
             android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:layout_below="@id/leaderboard"
+            android:text="Made with ❤ in India"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#c2c2c2"/>
 
     </RelativeLayout>
 

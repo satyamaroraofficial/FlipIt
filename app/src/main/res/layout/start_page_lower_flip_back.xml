@@ -15,8 +15,13 @@
         android:textColor="@color/white"
         android:fontFamily="sans-serif-thin"
         android:textSize="20dp"
-        android:id="@+id/easy"
-        />
+        android:id="@+id/easy" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:backgroundTint="@android:color/black"/>
+
     <TextView
         android:layout_width="264dp"
         android:layout_height="65dp"
