@@ -2,6 +2,7 @@ package com.example.cardflippingmemorygame.ui;
 
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.cardflippingmemorygame.Constants;
 import com.example.cardflippingmemorygame.R;
+import com.example.cardflippingmemorygame.SoundPlayer;
 
 import nl.dionsegijn.konfetti.KonfettiView;
 import nl.dionsegijn.konfetti.models.Shape;
@@ -52,6 +54,7 @@ public class Result extends Fragment {
                     .stream(400,500000L);
 
             //TODO play music for a win
+            new SoundPlayer(getContext()).playSound("winning_sound.mp3");
 
             if(Integer.valueOf(bundle.get("level").toString()) == Constants.LEVEL_EASY) {
                 if (Integer.valueOf(bundle.get("Time").toString()) < bestEasyScore){
