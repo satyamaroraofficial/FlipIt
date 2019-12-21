@@ -18,4 +18,7 @@
     <color name="dk_green">#38ba9e</color>
     <color name="dk_red">#bb3d72</color>
     <color name="dk_blue">#006ded</color>
+
+<!--    status bar color-->
+    <color name="status_bar">#000</color>
 </resources>

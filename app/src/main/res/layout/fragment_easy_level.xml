@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.EasyLevel"
+    android:background="@android:color/black"
     android:padding="20dp">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Best time : 0:"
         android:fontFamily="sans-serif-light"
-        android:textColor="#000"
+        android:textColor="@android:color/white"
         android:id="@+id/bestEasy"
         android:layout_alignParentStart="true"
         android:textSize="18dp"/>

@@ -2,7 +2,6 @@ package com.example.cardflippingmemorygame.ui;
 
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -96,7 +95,6 @@ public class EasyLevel extends Fragment {
         EasyLevelRecyclerView.setLayoutManager(layoutManager);
 
         cards = new ArrayList<>();
-//        //TODO shuffle cards
         shuffle(CARDS, Constants.EASY_NO_OF_CARDS);
         shuffle(CARDS, Constants.EASY_NO_OF_CARDS);//Double shuffle
         for (int card : CARDS) {
@@ -107,7 +105,7 @@ public class EasyLevel extends Fragment {
         isPaused = false;
         isCancelled = false;
 
-        //TODO Add countdown timer
+
         new CountDownTimer(Constants.EASY_TIME,Constants.TIMER_INTERVAL) {
             @Override
             public void onTick(long l) {

@@ -47,8 +47,9 @@ public class Result extends Fragment {
                     .setTimeToLive(2000)
                     .addSizes(new Size(12,2f), new Size(16, 6f))
                     .addShapes(Shape.CIRCLE, Shape.RECT)
-                    .setPosition(-50f, konfettiView.getWidth() + 500f, -50f, -50f)
-                    .stream(400,5000L);
+//                    .setPosition(-50f, konfettiView.getWidth() + 500f, -50f, -50f)
+                    .setPosition(-50f, konfettiView.getWidth() + 1000f, -50f, -50f)
+                    .stream(400,500000L);
 
             //TODO play music for a win
 

@@ -95,16 +95,28 @@
             android:fontFamily="sans-serif-light"
             android:id="@+id/instructions2"/>
 
-        <Button
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/leaderboard"-->
+<!--            android:layout_width="264dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/instructions2"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:text="Leaderboard"-->
+<!--            android:background="@color/pink"-->
+<!--            android:textAllCaps="false"/>-->
+
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/leaderboard"
             android:layout_width="264dp"
             android:layout_height="wrap_content"
+            android:text="Leaderboard"
             android:layout_below="@id/instructions2"
             android:layout_centerInParent="true"
-            android:layout_marginTop="40dp"
-            android:background="@color/pink"
-            android:text="Leaderboard"
-            android:textColor="@color/white" />
+            android:background="@drawable/btn_background"
+            android:layout_marginTop="48dp"
+            android:textAllCaps="false"/>
+
     </RelativeLayout>
 
 </FrameLayout>
