@@ -2,7 +2,7 @@
 Card Flipping Memory Game
 
 ## Designs
-<img src="design/screen1.png" width="300"><img src="design/screen2.png" width="300">
+<img src="design/screen1.png" width="300"> <img src="design/screen2.png" width="300">
 <img src="design/screen3.png" width="300">
 <img src="design/screen4.png" width="300">
 
